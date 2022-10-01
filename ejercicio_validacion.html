@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-Validacion</title>
+    <script>if($('form').smockValidateForm()){
+        // hacer algo ...
+      }</script>
+</head>
+<body>
+    <fieldset>
+        <legend>Nombre</legend>
+        <form action="" method="POST">
+            <label for="">Nombre:</label>
+            <input type="" id="caja_num_control" name="caja_num_control"  size="10"
+                maxlength="20"
+                required
+                pattern="([A-Z][a-z]+[^0-9@&%$\\\/()=?¿!.,:;])"
+                
+            >
+            <input type="submit" value="OK" />
+            </form>
+        </fieldset>
+    <fieldset>
+        <legend>Codigo Postal</legend>
+        <form action="" method="POST">
+            <label for="">Codigo postal:</label>
+            <input type="" id="caja_num_control" name="caja_num_control"  size="10"
+                maxlength="5"
+                required
+                pattern="[0-9]{5}"
+                
+            >
+            <input type="submit" value="OK" />
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>NumControl </legend>
+            <form action="" method="POST">
+                <label for="">Numero de control:</label>
+                <input type="" id="caja_num_control" name="caja_num_control"  size="10"
+                    maxlength="8"
+                    required
+                    pattern="[0-9]{8}"
+                    
+                >
+                <input type="submit" value="OK" />
+                </form>
+            </fieldset>
+
+        <fieldset>
+            <legend>NumControl (Una letra)</legend>
+            <form action="" method="POST">
+                <label for="">Numero de control (UNA letra):</label>
+                <input type="" id="caja_num_control" name="caja_num_control"  size="10"
+                    maxlength="9"
+                    required
+                    pattern="[SMICA]{1}[0-9]{8}"
+                    
+                >
+                <input type="submit" value="OK" />
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Numero Telefonico</legend>
+                <form action="" method="POST">
+                    <label for="">Numero::</label>
+                    <input type="" id="caja_num_control" name="caja_num_control"  size="10"
+                        maxlength="12"
+                        required
+                        pattern="[0-9]{3}(-)*[0-9]{3}(-)*[0-9]{4}"
+                        
+                    >
+                    <input type="submit" value="OK" />
+                    </form>
+                </fieldset>
+                <fieldset>
+                    <legend>Correo Electronico</legend>
+                    <form action="" method="POST">
+                        <label for="">Correo Electronico</label>
+                        <input type="" id="caja_CE" name="caja_CE"  size="10"
+                            maxlength="20"
+                            required
+                            pattern="[a-zA-Z]([a-zA-Z0-9]+)?@+[a-z]+\.[a-z]+"
+                            
+                        >
+                        <input type="submit" value="OK" />
+                        </form>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contraseña</legend>
+                        <form>
+                            <label for="">Contraseña</label>
+                            <input type="password" id="caja_pass" name="caja_pass" size="10" required
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                            <button type="submit" >OK</button>
+                            </form>
+                        </fieldset>
+</body>
+</html>
